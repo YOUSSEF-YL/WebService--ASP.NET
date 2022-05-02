@@ -17,12 +17,6 @@ namespace WEB_SERV
      [System.Web.Script.Services.ScriptService]
     public class Meteo : System.Web.Services.WebService
     {
-
-        [WebMethod]
-        public string HelloWorld()
-        {
-            return "Hello World";
-        }
         SqlConnection cnx = new SqlConnection("Data Source=.;Initial Catalog=Meteo;Integrated Security=True");
 
         [WebMethod]
